@@ -11,3 +11,6 @@ It's iPad app to teach pilots.
 * Reading/download/uploading pdf files
 * Management quizzes and logbook
 * Setting
+
+### Please check screenshots below:
+![alt text](http://github.com/liujong/FlightDesk/blob/master/Screenshots/1.png)
