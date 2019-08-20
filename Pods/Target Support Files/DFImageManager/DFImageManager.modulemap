@@ -1,6 +1,0 @@
-framework module DFImageManager {
-  umbrella header "DFImageManager-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module RGBColorSlider {
-  umbrella header "RGBColorSlider-umbrella.h"
-
-  export *
-  module * { export * }
-}
