@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController">
+            <connections>
+                <outlet property="btnSetUp" destination="DB7-p4-OHn" id="LQd-Ol-g4p"/>
+                <outlet property="btnSignin" destination="dvT-Nw-TxW" id="WrU-7Q-m9r"/>
+                <outlet property="imgThanksgivingDay" destination="iaG-T2-tOQ" id="rZR-s9-C11"/>
+                <outlet property="loginRegisterView" destination="yPh-PQ-Ctg" id="bO0-JX-mmA"/>
+                <outlet property="loginYPositionCons" destination="a6W-XV-dke" id="Ghs-yV-4dt"/>
+                <outlet property="thanksgivedayCV" destination="dYb-GZ-jPr" id="2eU-sU-jP1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad2_portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="9di-yR-VuR">
+                    <rect key="frame" x="118.5" y="123" width="531" height="778"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="531" id="UgK-ze-ene"/>
+                        <constraint firstAttribute="height" constant="778" id="u5P-k7-rR7"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXi-mz-Mdz">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPh-PQ-Ctg">
+                            <rect key="frame" x="7" y="676" width="754" height="340"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to FlightDesk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kH-lH-TBZ">
+                                    <rect key="frame" x="179" y="35" width="396" height="65"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="65" id="J8F-9Y-sUG"/>
+                                        <constraint firstAttribute="width" constant="396" id="n4W-3b-1LW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                    <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JF-Dv-fLi">
+                                    <rect key="frame" x="118.5" y="109" width="517" height="99"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="99" id="2eY-Em-OZ9"/>
+                                        <constraint firstAttribute="width" constant="517" id="fWv-Ju-aJr"/>
+                                    </constraints>
+                                    <string key="text">User your iPad to fully digitize your flight training requirements. To begin using the app functionality, you will need to setup your pilot or sign in if you already have a FlightDesk ID.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DB7-p4-OHn">
+                                    <rect key="frame" x="129" y="259" width="245" height="50"/>
+                                    <color key="backgroundColor" red="0.062745098039215685" green="0.44705882352941173" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="1Ym-DZ-adk"/>
+                                        <constraint firstAttribute="width" constant="245" id="cBR-PG-dSk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="Set up Profile">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onSetupProfile:" destination="-1" eventType="touchUpInside" id="3Mv-Tc-bUT"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvT-Nw-TxW">
+                                    <rect key="frame" x="401" y="259" width="245" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="245" id="Cwp-0i-Y2X"/>
+                                        <constraint firstAttribute="height" constant="50" id="fDA-oQ-Bg0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="Sign in">
+                                        <color key="titleColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onSignin:" destination="-1" eventType="touchUpInside" id="aa3-O9-ekj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="dvT-Nw-TxW" secondAttribute="trailing" constant="108" id="2Fo-lj-eLl"/>
+                                <constraint firstAttribute="height" constant="340" id="DyB-4t-Y5a"/>
+                                <constraint firstAttribute="width" constant="754" id="Gng-s1-Opl"/>
+                                <constraint firstItem="5kH-lH-TBZ" firstAttribute="centerX" secondItem="yPh-PQ-Ctg" secondAttribute="centerX" id="UPE-5X-woL"/>
+                                <constraint firstItem="DB7-p4-OHn" firstAttribute="leading" secondItem="yPh-PQ-Ctg" secondAttribute="leading" constant="129" id="VEu-wz-CWR"/>
+                                <constraint firstItem="8JF-Dv-fLi" firstAttribute="centerX" secondItem="yPh-PQ-Ctg" secondAttribute="centerX" id="XIr-87-5wX"/>
+                                <constraint firstItem="5kH-lH-TBZ" firstAttribute="top" secondItem="yPh-PQ-Ctg" secondAttribute="top" constant="35" id="iG4-hF-hjI"/>
+                                <constraint firstAttribute="bottom" secondItem="dvT-Nw-TxW" secondAttribute="bottom" constant="31" id="tZw-3e-vp5"/>
+                                <constraint firstAttribute="bottom" secondItem="DB7-p4-OHn" secondAttribute="bottom" constant="31" id="vNU-uW-JLc"/>
+                                <constraint firstItem="8JF-Dv-fLi" firstAttribute="top" secondItem="5kH-lH-TBZ" secondAttribute="bottom" constant="9" id="zsg-T4-QEp"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYb-GZ-jPr">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="christmas.png" translatesAutoresizingMaskIntoConstraints="NO" id="iaG-T2-tOQ">
+                                    <rect key="frame" x="47" y="290" width="674" height="444"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="444" id="btF-xR-pgO"/>
+                                        <constraint firstAttribute="width" constant="674" id="rB1-PG-KRU"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="0.54852552816901412" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="iaG-T2-tOQ" firstAttribute="centerX" secondItem="dYb-GZ-jPr" secondAttribute="centerX" id="TQw-Fv-VDT"/>
+                                <constraint firstItem="iaG-T2-tOQ" firstAttribute="centerY" secondItem="dYb-GZ-jPr" secondAttribute="centerY" id="zoI-rH-zFb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="yPh-PQ-Ctg" firstAttribute="centerX" secondItem="sXi-mz-Mdz" secondAttribute="centerX" id="H90-KN-seM"/>
+                        <constraint firstAttribute="bottom" secondItem="dYb-GZ-jPr" secondAttribute="bottom" id="I1c-JB-wb8"/>
+                        <constraint firstItem="dYb-GZ-jPr" firstAttribute="leading" secondItem="sXi-mz-Mdz" secondAttribute="leading" id="QF6-T3-cQB"/>
+                        <constraint firstAttribute="bottom" secondItem="yPh-PQ-Ctg" secondAttribute="bottom" constant="8" id="a6W-XV-dke"/>
+                        <constraint firstAttribute="trailing" secondItem="dYb-GZ-jPr" secondAttribute="trailing" id="iPf-LX-K2D"/>
+                        <constraint firstItem="dYb-GZ-jPr" firstAttribute="top" secondItem="sXi-mz-Mdz" secondAttribute="top" id="oOc-7F-tfd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sXi-mz-Mdz" secondAttribute="trailing" id="0bN-L1-P60"/>
+                <constraint firstItem="sXi-mz-Mdz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OMC-vl-fAz"/>
+                <constraint firstItem="9di-yR-VuR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="123" id="STU-7M-ToM"/>
+                <constraint firstItem="sXi-mz-Mdz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SU4-Ww-PMn"/>
+                <constraint firstItem="sXi-mz-Mdz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Skf-iW-WRY"/>
+                <constraint firstItem="9di-yR-VuR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T9I-LZ-s7Y"/>
+                <constraint firstAttribute="bottom" secondItem="sXi-mz-Mdz" secondAttribute="bottom" id="XFe-Wx-GKi"/>
+                <constraint firstItem="sXi-mz-Mdz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sAp-bs-d0K"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="christmas.png" width="599" height="350"/>
+        <image name="ipad2_portrait.png" width="442" height="647"/>
+    </resources>
+</document>

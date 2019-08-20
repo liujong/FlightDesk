@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerImageCropViewController">
+            <connections>
+                <outlet property="toolbar" destination="8oj-50-Zq6" id="ROA-cd-MsC"/>
+                <outlet property="view" destination="2Ek-ZW-hCM" id="6iz-vG-zG9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2Ek-ZW-hCM">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oj-50-Zq6">
+                    <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                    <items>
+                        <barButtonItem systemItem="cancel" id="2YJ-i6-JP7">
+                            <connections>
+                                <action selector="onCancel:" destination="-1" id="mT9-km-gqd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="DEI-NB-Kja"/>
+                        <barButtonItem title="Choose" id="gs4-y6-06o">
+                            <connections>
+                                <action selector="onChoose:" destination="-1" id="Q3L-OD-zyl"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8oj-50-Zq6" secondAttribute="bottom" id="1eQ-Cq-CH8"/>
+                <constraint firstAttribute="trailing" secondItem="8oj-50-Zq6" secondAttribute="trailing" id="PsC-cN-ZCk"/>
+                <constraint firstItem="8oj-50-Zq6" firstAttribute="leading" secondItem="2Ek-ZW-hCM" secondAttribute="leading" id="dGQ-dl-oJU"/>
+            </constraints>
+            <point key="canvasLocation" x="-128" y="47"/>
+        </view>
+    </objects>
+</document>

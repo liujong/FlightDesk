@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="AddOtherCell">
+            <rect key="frame" x="0.0" y="0.0" width="733" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="733" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29H-BG-fYW">
+                        <rect key="frame" x="693" y="33" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="eEy-BN-ZJ9"/>
+                            <constraint firstAttribute="width" constant="32" id="qza-1Z-xG3"/>
+                        </constraints>
+                        <state key="normal" image="chat_share"/>
+                        <connections>
+                            <action selector="onAddItem:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="a0D-kS-OYA"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xWy-XJ-d5i">
+                        <rect key="frame" x="35" y="8" width="650" height="84"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="UhA-63-X92"/>
+                        </connections>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RV7-M2-UCr">
+                        <rect key="frame" x="0.0" y="39" width="30" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="uS0-U4-Gmc"/>
+                            <constraint firstAttribute="width" constant="30" id="uwQ-xx-dN8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="29H-BG-fYW" firstAttribute="leading" secondItem="xWy-XJ-d5i" secondAttribute="trailing" constant="8" id="11c-Q1-hN7"/>
+                    <constraint firstAttribute="bottom" secondItem="xWy-XJ-d5i" secondAttribute="bottom" constant="7.5" id="6ec-dK-ZVz"/>
+                    <constraint firstItem="RV7-M2-UCr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Phs-Kw-dvj"/>
+                    <constraint firstItem="29H-BG-fYW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UaD-2q-0ad"/>
+                    <constraint firstItem="RV7-M2-UCr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Y9y-8F-fxj"/>
+                    <constraint firstItem="xWy-XJ-d5i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="cAP-rH-Met"/>
+                    <constraint firstItem="xWy-XJ-d5i" firstAttribute="leading" secondItem="RV7-M2-UCr" secondAttribute="trailing" constant="5" id="pRO-F5-DQX"/>
+                    <constraint firstItem="29H-BG-fYW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="rcG-TS-FJY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnAdd" destination="29H-BG-fYW" id="Gqx-eL-O1b"/>
+                <outlet property="contentTxtView" destination="xWy-XJ-d5i" id="NFM-De-r2D"/>
+                <outlet property="lblOther" destination="RV7-M2-UCr" id="YTz-y6-ykt"/>
+                <outlet property="paddingLeftContraints" destination="Y9y-8F-fxj" id="TYL-qh-tza"/>
+            </connections>
+            <point key="canvasLocation" x="-14.5" y="28"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_share" width="32" height="32"/>
+    </resources>
+</document>

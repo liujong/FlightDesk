@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[AircraftViewController onCancelAirCraftAdding:]:AircraftViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController textField:shouldChangeCharactersInRange:replacementString:]:AircraftViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[tmpDic objectForKey:@&quot;MaxNumberOfCharacters&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "textField.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController didAnnualDialog:]:AircraftViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "txtFieldName.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController tableView:didSelectRowAtIndexPath:]:AircraftViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LogbookViewController drawView]:LogbookViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CGRectMake(xOfFooter, labelFooterHeight, widthOfFooter + 1, 51)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LogbookViewController swipeableTableViewCell:didTriggerRightUtilityButtonWithIndex:]:LogbookViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LogbookViewController tableView:cellForRowAtIndexPath:]:LogbookViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "entry.aircraftRegistration">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TOSplitViewController secondaryViewController]:TOSplitViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.visibleViewControllers[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NavLogViewController keyboardWasShown:]:NavLogViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__87-[AircraftViewController swipeableTableViewCell:didTriggerRightUtilityButtonWithIndex:]_block_invoke:AircraftViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TrainingViewController getPrograms]:TrainingViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController convertStringToFile]:AircraftViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "recordsFilesArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController onSaveAirCraftAdding:]:AircraftViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController keyboardWasShown:]:AircraftViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController initArrItems]:AircraftViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController returnValueFromDateView:type:strDate:withIndex:]:AircraftViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentDateDialogSuper">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TrainingViewController tableView:numberOfRowsInSection:]:TrainingViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[arrayProgramsAndStudents count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController onSaveAddCraftItem:]:AircraftViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "[arrMaintainesItems objectAtIndex:indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController tableView:cellForRowAtIndexPath:]:AircraftViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SyncManager uploadQueriesToDelete:andUserID:]:SyncManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "query.type">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController reloadData]:AircraftViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[NavLogCell calculation]:NavLogCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_legSumTextField">
+            </PersistentString>
+            <PersistentString
+               value = "_distRem">
+            </PersistentString>
+            <PersistentString
+               value = "_leg12TextField">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate constructNotificationBody:ObjectiveDate:PriorDays:AfterDays:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[NSDate date]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController swipeableTableViewCell:didTriggerRightUtilityButtonWithIndex:]:AircraftViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "tmpCell.lblFieldName.text">
+            </PersistentString>
+            <PersistentString
+               value = "cell.reuseIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController viewDidLoad]:AircraftViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController shouldChangeCharactersWithItem:InRange:replacementString:]:AircraftViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[tmp objectForKey:@&quot;type&quot;] integerValue]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TrainingViewController tableView:cellForRowAtIndexPath:]:TrainingViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AircraftViewController popUpDateDialog:]:AircraftViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentDateDialogSuper">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

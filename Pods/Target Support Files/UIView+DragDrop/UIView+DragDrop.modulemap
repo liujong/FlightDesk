@@ -1,0 +1,6 @@
+framework module UIView_DragDrop {
+  umbrella header "UIView+DragDrop-umbrella.h"
+
+  export *
+  module * { export * }
+}

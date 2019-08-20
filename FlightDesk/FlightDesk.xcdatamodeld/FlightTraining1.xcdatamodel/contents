@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Assignment" representedClassName="Assignment" syncable="YES">
+        <attribute name="assignmentID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="chapters" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groundOrFlight" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="referenceID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lesson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lesson" inverseName="assignments" inverseEntity="Lesson" syncable="YES"/>
+    </entity>
+    <entity name="Content" representedClassName="Content" syncable="YES">
+        <attribute name="contentID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="groundOrFlight" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hasCheck" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasRemarks" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="lesson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lesson" inverseName="content" inverseEntity="Lesson" syncable="YES"/>
+        <relationship name="parentContent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Content" inverseName="subContent" inverseEntity="Content" syncable="YES"/>
+        <relationship name="record" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContentRecord" inverseName="content" inverseEntity="ContentRecord" syncable="YES"/>
+        <relationship name="subContent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Content" inverseName="parentContent" inverseEntity="Content" syncable="YES"/>
+    </entity>
+    <entity name="ContentRecord" representedClassName="ContentRecord" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="contentRecordID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="remarks" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="content" maxCount="1" deletionRule="Nullify" destinationEntity="Content" inverseName="record" inverseEntity="Content" syncable="YES"/>
+    </entity>
+    <entity name="Lesson" representedClassName="Lesson" syncable="YES">
+        <attribute name="flightCompletionStds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightObjective" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groundCompletionStds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groundDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groundObjective" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastSynced" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lessonID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="minDual" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minGround" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minInstrument" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minSolo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="assignments" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Assignment" inverseName="lesson" inverseEntity="Assignment" syncable="YES"/>
+        <relationship name="content" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Content" inverseName="lesson" inverseEntity="Content" syncable="YES"/>
+        <relationship name="lessonGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LessonGroup" inverseName="lessons" inverseEntity="LessonGroup" syncable="YES"/>
+        <relationship name="record" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LessonRecord" inverseName="lesson" inverseEntity="LessonRecord" syncable="YES"/>
+    </entity>
+    <entity name="LessonGroup" representedClassName="LessonGroup" syncable="YES">
+        <attribute name="expanded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="groupID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastSynced" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lessons" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Lesson" inverseName="lessonGroup" inverseEntity="Lesson" syncable="YES"/>
+        <relationship name="parentGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LessonGroup" inverseName="subGroups" inverseEntity="LessonGroup" syncable="YES"/>
+        <relationship name="subGroups" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="LessonGroup" inverseName="parentGroup" inverseEntity="LessonGroup" syncable="YES"/>
+    </entity>
+    <entity name="LessonRecord" representedClassName="LessonRecord" syncable="YES">
+        <attribute name="flightCompleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groundCompleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groundNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instructorID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastSynced" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lessonDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="lesson" maxCount="1" deletionRule="Nullify" destinationEntity="Lesson" inverseName="record" inverseEntity="Lesson" syncable="YES"/>
+        <relationship name="lessonLog" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LogEntry" inverseName="logLessonRecord" inverseEntity="LogEntry" syncable="YES"/>
+    </entity>
+    <entity name="LogEntry" representedClassName="LogEntry" syncable="YES">
+        <attribute name="aircraftModel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="aircraftRegistration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="amelTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="amesTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="approachesCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="approachesType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="aselTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="asesTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cfiNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cfiSignature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="complexTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dayTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dualGiven" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dualGivenCFI" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dualGivenCommercial" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dualGivenInstrument" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dualReceived" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="flightRoute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightSimulator" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gliderTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="groundTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="helicopterTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="highPerfTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="hobbsIn" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="hobbsOut" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="holds" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="instrumentActual" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="instrumentHood" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="instrumentSim" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="jetTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="landingsDay" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="landingsNight" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="logDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nightTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="picTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="recreationalTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="remarks" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sicTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="soloTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sportTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="taildraggerTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="takeoffsDay" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="takeoffsNight" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalFlightTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tracking" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="turbopropTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ultraLightTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="xcDayTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="xcDualGiven" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="xcDualReceived" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="xcNightTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="xcPIC" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="xcSolo" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="logLessonRecord" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LessonRecord" inverseName="lessonLog" inverseEntity="LessonRecord" syncable="YES"/>
+    </entity>
+    <entity name="TrainingCourse" representedClassName="TrainingCourse" syncable="YES">
+        <attribute name="confirmed" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="courseID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courseDocuments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TrainingDocument" inverseName="courses" inverseEntity="TrainingDocument" syncable="YES"/>
+    </entity>
+    <entity name="TrainingDocument" representedClassName="TrainingDocument" syncable="YES">
+        <attribute name="confirmed" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="documentID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="downloadDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="downloaded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pdfURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remoteURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TrainingCourse" inverseName="courseDocuments" inverseEntity="TrainingCourse" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Assignment" positionX="36" positionY="153" width="128" height="135"/>
+        <element name="Content" positionX="45" positionY="162" width="128" height="195"/>
+        <element name="ContentRecord" positionX="45" positionY="162" width="128" height="105"/>
+        <element name="Lesson" positionX="18" positionY="81" width="128" height="298"/>
+        <element name="LessonGroup" positionX="9" positionY="72" width="128" height="150"/>
+        <element name="LessonRecord" positionX="36" positionY="153" width="128" height="210"/>
+        <element name="LogEntry" positionX="36" positionY="153" width="128" height="855"/>
+        <element name="TrainingCourse" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="TrainingDocument" positionX="0" positionY="0" width="128" height="165"/>
+    </elements>
+</model>

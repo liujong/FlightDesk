@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddGroupCheckListsItem" id="KGk-i7-Jjw" customClass="AddGroupCheckListsCell">
+            <rect key="frame" x="0.0" y="0.0" width="733" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="733" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5b-Ny-co2">
+                        <rect key="frame" x="49" y="12" width="56.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="FVH-98-kOa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zB-PO-27I">
+                        <rect key="frame" x="122" y="6" width="563" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="xyZ-kb-9pJ"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuq-zy-DAT">
+                        <rect key="frame" x="693" y="6" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="37x-mn-jz3"/>
+                            <constraint firstAttribute="height" constant="32" id="c1a-ZU-ZdO"/>
+                        </constraints>
+                        <state key="normal" image="chat_share"/>
+                        <connections>
+                            <action selector="onAddItem:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kU7-b5-iLa"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="G5b-Ny-co2" secondAttribute="bottom" constant="3" id="0s4-KM-xbZ"/>
+                    <constraint firstItem="G5b-Ny-co2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="4B3-G2-0zl"/>
+                    <constraint firstItem="Vuq-zy-DAT" firstAttribute="leading" secondItem="7zB-PO-27I" secondAttribute="trailing" constant="8" id="8NQ-18-e6e"/>
+                    <constraint firstItem="7zB-PO-27I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="FZv-xW-ZLR"/>
+                    <constraint firstAttribute="bottom" secondItem="7zB-PO-27I" secondAttribute="bottom" constant="8" id="Gcw-Z4-Ene"/>
+                    <constraint firstAttribute="bottom" secondItem="Vuq-zy-DAT" secondAttribute="bottom" constant="6" id="McZ-cK-RMJ"/>
+                    <constraint firstAttribute="trailing" secondItem="Vuq-zy-DAT" secondAttribute="trailing" constant="8" id="Uyk-q5-nYe"/>
+                    <constraint firstItem="G5b-Ny-co2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="41" id="iu0-Oa-oTU"/>
+                    <constraint firstItem="Vuq-zy-DAT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="m8x-02-sCx"/>
+                    <constraint firstItem="7zB-PO-27I" firstAttribute="leading" secondItem="G5b-Ny-co2" secondAttribute="trailing" constant="16.5" id="ox8-6R-gu1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnAdd" destination="Vuq-zy-DAT" id="C7P-7h-Qa0"/>
+                <outlet property="groupChecklistTxtField" destination="7zB-PO-27I" id="acm-VK-3kc"/>
+                <outlet property="lblGroupCheckLists" destination="G5b-Ny-co2" id="QAX-r2-fk1"/>
+                <outlet property="paddingLeftContriants" destination="iu0-Oa-oTU" id="kJi-X3-beo"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_share" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module SignatureView {
+  umbrella header "SignatureView-umbrella.h"
+
+  export *
+  module * { export * }
+}

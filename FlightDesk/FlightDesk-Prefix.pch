@@ -1,0 +1,90 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#import "AppDelegate.h"
+#import "Communication.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <AFNetworking/AFNetworking.h>
+#import <Contacts/Contacts.h>
+#import <ContactsUI/ContactsUI.h>
+#import <CoreLocation/CoreLocation.h>
+
+#import "PersistentCoreDataStack.h"
+#import "DeleteQuery+CoreDataClass.h"
+#import "Content+CoreDataClass.h"
+#import "Assignment+CoreDataClass.h"
+#import "Lesson+CoreDataClass.h"
+#import "LessonGroup+CoreDataClass.h"
+
+#import "EndorsementRecord.h"
+#import "Endorsement+CoreDataClass.h"
+#import "LogEntry+CoreDataClass.h"
+#import "Student+CoreDataClass.h"
+#import "LessonRecord.h"
+#import "Question+CoreDataClass.h"
+#import "ContentRecord+CoreDataClass.h"
+#import "Document+CoreDataClass.h"
+#import "InsAndStdAndProgamQuery+CoreDataClass.h"
+#import "ChatHistory+CoreDataClass.h"
+#import "ChatBoard+CoreDataClass.h"
+#import "Aircraft+CoreDataClass.h"
+#import "NavLog+CoreDataClass.h"
+#import "NavLogRecord+CoreDataClass.h"
+#import "Checklists+CoreDataClass.h"
+#import "ChecklistsContent+CoreDataClass.h"
+#import "RecordsFile+CoreDataClass.h"
+#import "Users+CoreDataClass.h"
+#import "GeneralFlightDesk+CoreDataClass.h"
+#import "Faqs+CoreDataClass.h"
+#import "ResourcesCalendar+CoreDataClass.h"
+#import "MaintenanceLogs+CoreDataClass.h"
+
+#import <GoogleAnalytics/GAI.h>
+#import <GoogleAnalytics/GAIDictionaryBuilder.h>
+#import <GoogleAnalytics/GAIEcommerceFields.h>
+#import <GoogleAnalytics/GAIEcommerceProduct.h>
+#import <GoogleAnalytics/GAIEcommercePromotion.h>
+#import <GoogleAnalytics/GAIFields.h>
+#import <GoogleAnalytics/GAILogger.h>
+#import <GoogleAnalytics/GAITrackedViewController.h>
+#import <GoogleAnalytics/GAITracker.h>
+
+#import "Reachability.h"
+#import "Global.h"
+#import "LocalDBManager.h"
+#import "Constant.h"
+#import "AFMInfoBanner.h"
+#import "ALAlertBanner.h"
+
+
+//#define DEVENV
+
+
+
+#define NOTIFICATION_FLIGHTDESK_LOGIN_SUCCESSFUL_SNYC               @"NOTIFICATION_FLIGHTDESK_LOGIN_SUCCESSFUL_SNYC"
+#define NOTIFICATION_TAP_TABITEM                                    @"NOTIFICATION_TAP_TABITEM"
+#define NOTIFICATION_FLIGHTDESK_FIND_INSTRUCTOR                     @"NOTIFICATION_FLIGHTDESK_FIND_INSTRUCTOR"
+
+#define NOTIFICATION_UPDATE_LOGBOOK_HEIGHT                          @"NOTIFICATION_UPDATE_LOGBOOK_HEIGHT"
+
+#define NOTIFICATION_AIRCRAFT_BADGE                                 @"NOTIFICATION_AIRCRAFT_BADGE"
+
+#define NOTIFICATION_RESOURCES_POSITION                             @"NOTIFICATION_RESOURCES_POSITION"
+#define NOTIFICATION_CLOSE_DASHBOARD                                @"NOTIFICATION_CLOSE_DASHBOARD"
+
+
+#endif

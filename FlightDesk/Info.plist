@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>NSCalendarsUsageDescription</key>
+	<string>This app has read and write access to your calendars</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleVersion</key>
+	<string>3</string>
+	<key>NSCameraUsageDescription</key>
+	<string>&quot;FlightDesk&quot; Would Like To Access the Camera</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>0eab404f1691e7120e25e36e4df3889af92571f3</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+				<key>KitInfo</key>
+				<dict/>
+			</dict>
+		</array>
+	</dict>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>FlightDesk</string>
+			<key>CFBundleTypeIconFiles</key>
+			<array>
+				<string>icon_320.png</string>
+				<string>icon_64.png</string>
+			</array>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+		</dict>
+	</array>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>&quot;FlightDesk&quot; Would Like To Access the Microphone</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>&quot;FlightDesk&quot; Would Like To add the Photo Library</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>NSContactsUsageDescription</key>
+	<string>&quot;FlightDesk&quot; Would Like To Access the Contact</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Agency_FB.ttf</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>CFBundleDisplayName</key>
+	<string>FlightDesk</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>&quot;FlightDesk&quot; Would Like To Access the Photo Library</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>FlightDesk needs your location</string>
+</dict>
+</plist>
