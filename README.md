@@ -13,4 +13,5 @@ It's iPad app to teach pilots.
 * Setting
 
 ### Please check screenshots below:
+<img src="/Screenshots/1.png" width="200"/>
 ![](http://github.com/liujong/FlightDesk/blob/master/Screenshots/1.png | width=200)
